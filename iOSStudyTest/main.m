@@ -13,7 +13,10 @@
 #import "Person.h"
 
 int main(int argc, char * argv[]) {
-    @autoreleasepool {
+        @autoreleasepool {
+            return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+        }
+}
         
 //        NSLog(@"hello world");
 //        NSInteger s = 10;
@@ -23,8 +26,7 @@ int main(int argc, char * argv[]) {
 //        NSLog(@"%@",str);
 //        NSRange rang = {1,3};
 //        NSMakeRange(1,3);
-        
-        return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+
         
 //        Person *p = [[Person alloc] init];
 //        p.name = @"张三";
@@ -401,6 +403,3 @@ int main(int argc, char * argv[]) {
 //
 //    }
 //    return 0;
-    }
-}
-    
