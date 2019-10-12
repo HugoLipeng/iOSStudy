@@ -241,6 +241,25 @@ OC中的代理模式核心技术是：**id类型+协议+多态**
 
 
 
+## [iOS应用程序的生命周期](http://www.jianshu.com/p/aa50e5350852)
+
+> iOS应用程序都遵循`Model-View-Controller`的架构，`Model`负责存储数据和处理业务逻辑，`View`负责显示数据和与用户交互，`Controller`是两者的中介，协调`Model`和`View`相互协作。它们的**通讯规则**如下：
+>
+> 1. `Controller`能够访问`Model`和`View`，`Model`和`View`不能互相访问
+> 2. 当`View`与用户交互产生事件时，使用`target-action`方式来处理
+> 3. 当`View`需要处理一些特殊UI逻辑或获取数据源时，通过`delegate`或`data source`方式交给`Controller`来处理
+> 4.  `Model`不能直接与`Controller`通信，当`Model`有数据更新时，可以通过`Notification`或`KVO (Key Value Observing)`来通知`Controller`更新`View`
+>
+> 大多数发生状态转换时都会调用`delegate`对象对应的方法来响应app的状态改变。下面汇总了`delegate`对象的所有方法，当app状态发生转换时，你可能会使用到它们。
+>
+> - `application:willFinishLaunchingWithOptions:` - 这个方法是你在启动时的第一次机会来执行代码
+> - `application:didFinishLaunchingWithOptions:` - 这个方法允许你在显示app给用户之前执行最后的初始化操作
+> - `applicationDidBecomeActive:` - app已经切换到active状态后需要执行的操作
+> - `applicationWillResignActive:` - app将要从前台切换到后台时需要执行的操作
+> - `applicationDidEnterBackground:` - app已经进入后台后需要执行的操作
+> - `applicationWillEnterForeground:` - app将要从后台切换到前台需要执行的操作，但app还不是active状态
+> - `applicationWillTerminate:` - app将要结束时需要执行的操作
+
 
 
 
