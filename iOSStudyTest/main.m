@@ -14,8 +14,21 @@
 
 int main(int argc, char * argv[]) {
         @autoreleasepool {
-            return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+//            return UIApplicationMain(argc, argv, nil, NSStringFromClass([AppDelegate class]));
+            int year,rem_4,rem_100,rem_400;
+            NSLog(@"输入一个年份：");
+            scanf("%i",&year);
+            rem_4 = year % 4;
+            rem_100 = year % 100;
+            rem_400 = year % 400;
+            if ((rem_4 == 0 && rem_100 != 0) || rem_400 == 0) {
+                NSLog(@"是闰年");
+            }else{
+                NSLog(@"不是闰年");
+            }
+            
         }
+    return 0;
 }
         
 //        NSLog(@"hello world");

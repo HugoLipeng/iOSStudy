@@ -12,7 +12,7 @@
 
 
 
-## OC学习路径
+## OC学习路径（博客作者注销账号了，悲从中来）
 
 https://blog.csdn.net/jiangwei0910410003/article/category/2745191 系列
 
@@ -297,7 +297,9 @@ OC中的代理模式核心技术是：**id类型+协议+多态**
 
 ##### Tips:
 
-通过`#pragma mark -`分隔代码块
+通过`#pragma mark -`分隔代码块  
+
+清楚pod缓存：pod cache clean --all 
 
 
 
