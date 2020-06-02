@@ -1,4 +1,4 @@
-# iOSStudyTest
+# iOSStudy
 [iOS官方开发手册](https://developer.apple.com/documentation/)
 
 官方代码示例都很规范，分类也很清晰，内容也更全。从大块上，可以分为 App Frameworks、图形、App 服务、媒体、开发工具、系统等。
