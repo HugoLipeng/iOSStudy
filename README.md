@@ -1,6 +1,8 @@
 # iOSStudy
 [iOS官方开发手册](https://developer.apple.com/documentation/)
 
+中文版：https://developer.apple.com/cn/documentation/
+
 官方代码示例都很规范，分类也很清晰，内容也更全。从大块上，可以分为 App Frameworks、图形、App 服务、媒体、开发工具、系统等。
 
 - App Frameworks 里面主要是 Fundation 框架、UIKit、AppKit 这类文档资料。
